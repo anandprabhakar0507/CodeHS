@@ -1,0 +1,18 @@
+# Your code here...
+class TripleAndHalve:
+    def __init__(self):
+        self.__number = 1
+    
+    def triple(self):
+        self.__number = self.__number * 3
+    
+    def halve(self):
+        self.__number = self.__number // 2
+        
+    def print_number(self):
+        print(self.__number)
+
+t1 = TripleAndHalve()
+t1.triple()
+t1.halve()
+t1.print_number()
