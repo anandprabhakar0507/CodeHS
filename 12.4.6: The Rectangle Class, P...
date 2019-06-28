@@ -1,0 +1,41 @@
+# Your code here...
+# Your code here...
+class Rectangle:
+    def __init__(self,length=0, width=0):
+        self.length = length
+        self.width = width
+    def get_area(self,x,y):
+        self.calc = self.length*self.width
+        return self.calc
+    def get_perimeter(self):
+        self.perimeter = ((self.length)*2) + ((self.width)*2)
+    def __repr__(self):
+        return "Rectangle with length " + str(self.length) +" and width " + str(self.width)
+    
+    def __eq__(self,other):
+        return self.length == other.length and \
+        self.width == other.width
+    
+    def __add__(self,other):
+        return(self.length+other.length + self.width+ other.width)
+        
+    def __sub__(self,other):
+        return(self.length-other.length - self.width- other.width)
+
+p1 = Rectangle(1,2)
+p2 = Rectangle(1,2)
+p3 = Rectangle(65,4)
+print p3
+print p1
+print p2
+print p3
+p4 = p1 + p2
+print p4
+if p1 == p2:
+    print "Rectangles have the same dimensions!"
+if p1 == p3:
+    print "Rectangles have the same dimensions!"
+if p2 == p3:
+    print "Rectangles have the same dimensions!"
+elif p1 != p2 or p1 != p3 and p2 != p3:
+    print "Rectangles have different dimensions!"
