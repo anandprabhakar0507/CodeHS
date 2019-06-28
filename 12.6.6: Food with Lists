@@ -1,0 +1,38 @@
+# Your code here...
+    class Food:
+        calories = 0
+        category = ""
+        def __init__(self):
+            self.calories = 0
+            self.category = ""
+            
+        def __repr__(self):
+            return "category: " + str(self.category) + "," + "calories: " +  str(self.calories)
+    
+            
+        
+    class Vegetable(Food):
+        
+        def __init__(self):
+            Food.__init__(self)
+            Food.category = "veggies"
+                
+            
+        
+    class Broccoli(Vegetable):
+        
+        def __init__(self):
+            Vegetable.__init__(self)
+            Vegetable.calories = 100
+            
+            
+    b = Broccoli()
+    print b
+    
+    foodList = [Food(), Vegetable(), Broccoli(), 5]
+    
+    for thing in foodList:
+        if isinstance(thing, Food):
+            print str(thing) + " is a food"
+        else:
+            print str(thing) + " is not a food"
