@@ -1,0 +1,49 @@
+class Rectangle:
+    """
+    This class represents a rectangle. It
+    has a length and a width and is capable
+    of computing its own area.
+    """
+    
+    
+    def __init__(self, length = 0, width = 0):
+        """
+        Initializes a rectangle with an optional
+        length and width.
+        """
+        self.length = length
+        self.width = width
+        self.__num_rectangles = 0
+    
+    def __repr__(self):
+        """
+        Returns a string representation of the
+        rectangle.
+        """
+        return "rectangle with length: " + str(self.length) \
+            + " and width: " + str(self.width)
+    
+    def getter(self):
+        self.__num_rectangles = self.__num_rectangles + 1
+        print self.__num_rectangles
+        
+    def get_area(self):
+        """Returns the rectangle's area."""
+        x = self.length * self.width
+        if x % 2 == 1:
+            print "Area is not an even value"
+        else:
+            self.__num_rectangles = self.__num_rectangles + 1
+            return self.length * self.width
+            
+
+
+r1 = Rectangle(2, 6)
+print r1
+print r1.get_area()
+print r1.getter()
+
+r2 = Rectangle(3, 5)
+print r2
+print r2.get_area()
+print r2.getter()
