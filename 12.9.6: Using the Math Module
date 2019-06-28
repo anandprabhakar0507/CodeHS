@@ -1,0 +1,24 @@
+angles = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360]
+
+import math
+
+for i in angles:
+    x = math.radians(i)
+    
+    if math.sin(x) == 1:
+        print str(i) + " has a sine value of " + str(math.sin(x)) + "."
+        
+    if math.sin(x) == -1:
+        print str(i) + " has a sine value of " + str(math.sin(x)) + "."
+        
+    if math.cos(x) == 1:
+        print str(i) + " has a cosine value of " + str(math.sin(x)) + "."
+        
+    if math.cos(x) == -1:
+        print str(i) + " has a cosine value of " + str(math.sin(x)) + "."
+        
+    if math.tan(x) == 1:
+        print str(i) + " has a tan value of " + str(math.sin(x)) + "."
+        
+    if math.tan(x) == -1:
+        print str(i) + " has a tan value of " + str(math.sin(x)) + "."
