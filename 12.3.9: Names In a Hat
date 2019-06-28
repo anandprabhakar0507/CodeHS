@@ -1,0 +1,27 @@
+# Your code here..
+import random
+
+class NameHat:
+    def __init__(self):
+        self.hat = []
+    
+    def __repr__(self):
+        return(str(self.hat))
+    
+    def insert_name(self,name):
+        if name not in self.hat:
+            self.hat.append(name)
+    
+    def draw_name(self):
+        x = random.choice(self.hat)
+        return x
+
+
+hat1 = NameHat()
+
+hat1.insert_name("daddy")
+hat1.insert_name("shea")
+hat1.insert_name("slkjdf;a")
+z = (hat1.draw_name())
+print z
+print hat1
