@@ -1,0 +1,29 @@
+# Your code here...
+class Food:
+
+    def __init__(self):
+        calories = 0
+        category = ""
+        
+    def __repr__(self):
+        return "category: " + str(self.category) + "," + "calories: " +  str(self.calories)
+
+        
+    
+class Vegetable(Food):
+    
+    def __init__(self):
+        Food.__init__(self)
+        Food.category = "veggies"
+            
+        
+    
+class Broccoli(Vegetable):
+    
+    def __init__(self):
+        Vegetable.__init__(self)
+        Vegetable.calories = 100
+        
+        
+b = Broccoli()
+print b
