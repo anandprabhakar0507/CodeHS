@@ -1,0 +1,9 @@
+# Your code here...
+class Rectangle:
+    def __init__(self,length=0, width=0):
+        self.length = length
+        self.width = width
+
+p1 = Rectangle()
+print p1.length
+print p1.width
