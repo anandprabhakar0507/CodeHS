@@ -1,0 +1,18 @@
+# Your code here...
+class Rectangle:
+    def __init__(self,length=0, width=0):
+        self.length = length
+        self.width = width
+    def get_area(self,x,y):
+        self.calc = self.length*self.width
+        return self.calc
+
+p1 = Rectangle(1,2)
+print p1.length
+print p1.width
+print p1.get_area(0,0)
+
+p2 = Rectangle()
+print p2.length
+print p2.width
+print p2.get_area(1,1)
