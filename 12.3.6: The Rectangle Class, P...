@@ -1,0 +1,27 @@
+# Your code here...
+# Your code here...
+class Rectangle:
+    def __init__(self,length=0, width=0):
+        self.length = length
+        self.width = width
+    def get_area(self,x,y):
+        self.calc = self.length*self.width
+        return self.calc
+    def get_perimeter(self):
+        self.perimeter = ((self.length)*2) + ((self.width)*2)
+    def __repr__(self):
+        return "Rectangle with length " + str(self.length) +" and width " + str(self.width)
+    
+
+p1 = Rectangle(1,2)
+print p1.length
+print p1.width
+print p1.get_area(0,0)
+print p1.get_perimeter()
+print p1
+p2 = Rectangle()    
+print p2.length
+print p2.width
+print p2.get_area(1,1)
+print p1.get_perimeter()
+print p2
